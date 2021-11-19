@@ -1,0 +1,10 @@
+<button class="btn btn-primary"
+        (click)="showParagraph()">
+  Display Details
+</button>
+<p *ngIf="shouldShowParagraph" g>Some details of the user</p>
+<p *ngFor="let counterValue of counterArray"
+   [ngStyle]="{backgroundColor: counterValue >= 5 ? 'blue': 'transparent'}"
+>
+  {{ counterValue }}
+</p>
